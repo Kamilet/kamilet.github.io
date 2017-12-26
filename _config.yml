@@ -4,16 +4,16 @@ layouts:     ./_layouts
 timezone:    Asia/Hongkong
 
 # Site settings
-email: 1540294142@qq.com
-author: Joytou Wu
-owner_name: Joytou Wu
-github_username: joytou
-repo: JOYTOU
+email: hi@kamilet.cn
+author: Kamilet
+owner_name: Kamilet
+github_username: Kamilet
+repo: Kamilet
 
 #Server
-url: http://joytou.nets.hk
-github: https://github.com/joytou/
-coding: https://coding.net/joytou/
+url: http://www.kamilet.cn
+github: https://github.com/kamilet
+coding: http://coding.kamilet.cn
 baseurl: ""
 
 #Page settings
@@ -30,18 +30,17 @@ exclude: ['README.md','Manifest.md']
 include: ['robots.txt']
 
 # Description
-description: "只为博客而生，也因为博客而存在。Not only for the existence of the blog, but also because of the existence of the blog."
+description: "Kamilet.cn的博主为研究代码而建立的博客，欢迎交流。"
 # Keywords
 keywords:
-        - "github"
-        - "bootstrap"
+        - "kamilet"
+        - "卡米雷特"
         - "blog"
-        - "joytou"
-        - "markdown"
-        - "jekyll"
+        - "博客"
+        - "python"
+        - "coding"
         - "博客"
         - "个人博客"
-        - "博客模板"
         
 #Update configuration
 versioncode: 1
@@ -53,18 +52,18 @@ versionname: "1.0.1"
 
 #Others
 #Baidu
-BaiduSiteVerification: "eb6Z6IT34b"
+BaiduSiteVerification: ""
 #Sogou
-SogouSiteVerification: "xhqLIE4SUI"
+SogouSiteVerification: ""
 #360
-360SiteVerification: "24cc2fe4596dc5c6885b587f8db09733"
+360SiteVerification: ""
 #51La
-51la: "19258191"
-51lamb: "1"
+51la: ""
+51lamb: ""
 
-coding_comments:
-  owner: 'joytou'
-  repo: 'JOYTOU'
-  oauth:
-    client_id: '624713aab28c44e0555b0e8d5d18dece'
-    client_secret: '5d2d45460648bfbd3b9f77bead1a0ac6aa7c3c95'
+#coding_comments:
+#  owner: 'joytou'
+#  repo: 'KAMILET'
+#  oauth:
+#    client_id: '624713aab28c44e0555b0e8d5d18dece'
+#    client_secret: '5d2d45460648bfbd3b9f77bead1a0ac6aa7c3c95'
