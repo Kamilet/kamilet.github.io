@@ -17,6 +17,7 @@
 	{% endif %}
     {% if site.360SiteVerification %}
     <meta name="360-site-verification" content="{{ site.360SiteVerification }}" />
+    <meta name="google-site-verification" content="yBPpYT-T-orDlu9rkEvxfxb_8uvuVSwCruq5y7q0ZNg" />
 	{% endif %}
     <link rel="apple-touch-icon" href="{{ '/assets/logo.png' | prepend: site.baseurl }}">
     <link rel="icon" href="{{ '/assets/favicon-32.ico' | prepend: site.baseurl }}"> 
@@ -63,4 +64,24 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- 主动推送 -->
+    <script>(function(){
+var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?97edadba8bc2bd7efe0645cd1023a759":"https://jspassport.ssl.qhimg.com/11.0.1.js?97edadba8bc2bd7efe0645cd1023a759";
+document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+    </script>
+    <script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+    </script>
   </head>
