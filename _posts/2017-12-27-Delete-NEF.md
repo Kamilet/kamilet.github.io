@@ -1,15 +1,19 @@
 ---
 layout: postcn
-title: "建站测试"
-date: 2017-12-26 10:08:00 +0800
+title: "删除没有对应JPG的NEF"
+date: 2017-12-27 00:15:00 +0800
 lang: cn
 nav: post
-category: log
-tags: [kamilet, website]
+category: python
+tags: [python, file]
 ---
 
 * content
 {:toc}
+
+我们筛选照片的时候，经常看JPG来筛选，然后删掉对应NEF，这样不需要开启占内存的Lightroom等即可筛选。
+这个程序即遍历当前目录下的文件，如果一个NEF没有对应名称的JPG，那么删除它。
+<!-- more -->
 
 {% highlight ruby lineno %}
 '''删除没有对应JPG的NEF
