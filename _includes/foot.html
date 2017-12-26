@@ -1,10 +1,9 @@
 {% assign translation = site.data[page.lang] %}
-{% capture builder %}<a href="//joytou.net.cn/">Kamilet</a>{% endcapture %}
+{% capture builder %}<a href="//kamilet.cn/">Kamilet</a>{% endcapture %}
 {% capture style %}<a href="http://getbootstrap.com">Bootstrap</a>{% endcapture %}
 <div class="blog-footer">
       <p>Copyright &copy; 2017 <a href="//joytou.net.cn/">Kamilet</a></p>
-      <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
-      <p>{{ translation.footcopyright | replace: 'builder', builder | replace: 'style', style }}</p>
+      <p><a href="http://www.miitbeian.gov.cn" style="font-weight: bold">蜀ICP备17027581号</a></p>
       <p>
         <a href="#">{{ translation.backtop }}</a>
       </p>
@@ -28,6 +27,6 @@
     <script src="{{ '/assets/js/ie10-viewport-bug-workaround.js' | prepend: site.baseurl }}"></script>
     {% if site.51la %}
 	<!-- 51.la statistic -->
-	<script language="javascript" type="text/javascript" src="//js.users.51.la/{{ site.51la }}.js"></script>
+  	<script language="javascript" type="text/javascript" src="//js.users.51.la/{{ site.51la }}.js"></script>
     <noscript><a href="//www.51.la/?{{ site.51la }}" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="//img.users.51.la/{{ site.51la }}.asp" style="border:none" /></a></noscript>
 	{% endif %}
