@@ -1,6 +1,6 @@
 ---
 layout: postcn
-title: "从XML获取URL"
+title: "python:从XML获取URL"
 date: 2017-12-27 13:15:00 +0800
 lang: cn
 nav: post

@@ -1,6 +1,6 @@
 ---
 layout: postcn
-title: "删除没有对应JPG的NEF"
+title: "python:删除没有对应JPG的NEF"
 date: 2017-12-27 00:15:00 +0800
 lang: cn
 nav: post
