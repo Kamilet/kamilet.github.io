@@ -67,5 +67,5 @@ coding_comments:
   owner: 'Kamilet'
   repo: 'coding.kamilet.cn-comments'
   oauth:
-    client_id: '6d66ad1e73261ff445314a5120746e75d'
+    client_id: '6d66ad1e73261f445314a5120746e75d'
     client_secret: '6fbabe95641aa3589fc4632c8079a83ef55eac56'
