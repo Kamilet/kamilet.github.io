@@ -9,23 +9,10 @@ tags: [python, file]
 ---
 
 * content
-	{:toc}读取当前文件夹下PY文件，并制作一份MD文件
+{:toc}
 
-默认文件头：
----
-layout: postcn
-title: "python:!!!YOUR FILE NAME!!!"
-date: XXXX-XX-XX XX:XX:XX +0800
-lang: cn
-nav: post
-category: python
-tags: [python, file]
----
+读取当前文件夹下PY文件，并制作一份MD文件
 
-默认文件名：
-XXXX-XX-XX-!!!YOUR FILE NAME!!!
-
-以上请在相应位置修改！
 <!-- more -->
 {% highlight ruby lineno %}
 #!/usr/bin/python  
