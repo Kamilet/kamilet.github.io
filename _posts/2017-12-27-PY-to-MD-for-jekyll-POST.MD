@@ -39,7 +39,7 @@ XXXX-XX-XX-!!!YOUR FILE NAME!!!
 import os, sys, re, shutil, time
 
 def trans(f):
-	filename = time.strftime("%Y-%m-%d-", time.localtime())+f[:-4]+'.MD'
+	filename = time.strftime("%Y-%m-%d-", time.localtime())+f[:-3]+'.MD'
 	if os.path.exists(filename):
 		os.remove(filename)
 	md = open(filename,'w', encoding='UTF-8')
@@ -57,7 +57,7 @@ tags: [python, file]\n\
 ---\n\
 \n\
 * content\n\
-	{}'.format(f[:-4], time.strftime("%Y-%m-%d", time.localtime()), time.strftime("%H:%M:%S", time.localtime()), '{:toc}')
+	{}'.format(f[:-3], time.strftime("%Y-%m-%d", time.localtime()), time.strftime("%H:%M:%S", time.localtime()), '{:toc}')
 	md.write(head)
 	md.write(briefing[0])
 	md.write('<!-- more -->\n')
