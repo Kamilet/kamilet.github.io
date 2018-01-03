@@ -5,7 +5,7 @@ date: 2017-12-27 23:06:11 +0800
 lang: cn
 nav: post
 category: python
-tags: [python, file]
+tags: [小程序]
 ---
 
 * content
