@@ -72,10 +72,15 @@
 				<span class="glyphicon glyphicon-transfer"></span>{{ translation.selectlang }} <b class="caret"></b>
 			  </a>
 			  <ul class="dropdown-menu">
+			  	<!--
 				{% for weblangs in site.data.lang %}
 				{% assign weblang = weblangs[1] %}
 				<li class="{% if page.lang == weblang.lang %}active{% endif %}"><a href="/{{ weblang.lang }}">{{ weblang.language }}</a></li>
 				{% endfor %}
+			    -->
+			    <li class="active"><a href="http://coding.kamilet.cn/cn/about">简体中文</a></li>
+				<li class=""><a href="http://coding.kamilet.cn/tw/about">繁體中文</a></li>
+				<li class=""><a href="http://coding.kamilet.cn/en/about">English</a></li>
 			  </ul>
 			</li>
             <li class="{% if page.nav == "feed" %}active{% endif %}"><a href="/feed.xml"><span class="icon-rss"></span>{{ translation.rssfeed }}</a></li>

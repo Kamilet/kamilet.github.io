@@ -3,11 +3,11 @@ cn:
    code: "zh-Hans"
    lang: "cn"
 tw:
-   language: "繁體中文(无文章)"
+   language: "繁體中文"
    code: "zh-Hant"
    lang: "tw"
 en: 
-   language: "English(No Post)"
+   language: "English"
    code: "en"
    lang: "en"
 
