@@ -2,7 +2,7 @@
 layout: postcn
 title: "python:替换当前文件夹下所有文件名的某些字符"
 date: 2017-12-27 16:15:00 +0800
-lang: [cn, en, tw]
+lang: cn
 nav: post
 category: python
 tags: [小程序]

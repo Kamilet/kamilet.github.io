@@ -2,7 +2,7 @@
 layout: postcn
 title: "python:检查是否为回文"
 date: 2017-12-27 23:06:11 +0800
-lang: [cn, en, tw]
+lang: cn
 nav: post
 category: python
 tags: [小程序]

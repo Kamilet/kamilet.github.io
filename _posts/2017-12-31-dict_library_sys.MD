@@ -2,7 +2,7 @@
 layout: postcn
 title: "python:图书管理系统(无UI非数据库版)"
 date: 2017-12-31 01:00:56 +0800
-lang: [cn, en, tw]
+lang: cn
 nav: post
 category: python
 tags: [小程序]

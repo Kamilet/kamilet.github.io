@@ -2,7 +2,7 @@
 layout: postcn
 title: "python:找到页面里的外链"
 date: 2017-12-27 14:30:00 +0800
-lang: [cn, en, tw]
+lang: cn
 nav: post
 category: python
 tags: [小程序]
