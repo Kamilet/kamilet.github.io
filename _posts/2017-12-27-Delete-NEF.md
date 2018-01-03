@@ -2,7 +2,7 @@
 layout: postcn
 title: "python:删除没有对应JPG的NEF"
 date: 2017-12-27 00:15:00 +0800
-lang: cn
+lang: [cn, en, tw]
 nav: post
 category: python
 tags: [小程序]

@@ -2,7 +2,7 @@
 layout: postcn
 title: "python:【抽鬼牌】小游戏，无UI"
 date: 2018-01-01 15:04:32 +0800
-lang: cn
+lang: [cn, en, tw]
 nav: post
 category: python
 tags: [小游戏]

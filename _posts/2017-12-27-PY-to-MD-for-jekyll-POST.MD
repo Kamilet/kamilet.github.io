@@ -2,7 +2,7 @@
 layout: postcn
 title: "python:.py文件转化为.MD文件"
 date: 2017-12-27 19:35:06 +0800
-lang: cn
+lang: [cn, en, tw]
 nav: post
 category: python
 tags: [小程序]

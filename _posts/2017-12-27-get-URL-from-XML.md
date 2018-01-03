@@ -2,7 +2,7 @@
 layout: postcn
 title: "python:从XML获取URL"
 date: 2017-12-27 13:15:00 +0800
-lang: cn
+lang: [cn, en, tw]
 nav: post
 category: python
 tags: [小程序]
