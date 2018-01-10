@@ -20,6 +20,376 @@ Please use Numpy for more complex situation!
 <!-- more -->
 Instruction: [sMartix](https://github.com/Kamilet/Simple-Matrix-python)
 
+# Simple-Matrix-python
+A lightweight module for simple Matrix operation. Simple and easy to use.  
+轻量级的简单矩阵处理模块，使用起来比较方便。  
+
++ English Documentation [Jump](#english-documentation)
++ 简体中文使用指南 [转到](#简体中文使用指南)
+
+---
+
+# English Documentation
+
+Thanks for checking this module.  
+It's my first one. Hopefully it's useful for you.  
+**1 Class** and **20 functions** are in this module,  
+which will help you with basic opreations on Matrixs.  
+
+>Please remember: All numbers of rows and columns start from ZERO.
+>So a matrix 'A' with m rows and n columns,
+>the last item should be 'A\[m-1\]\[n-1\]'.
+
+Here are introductions for all functions:  
+
+## Index
+
++ Matrix Building
+    + **Generator:** [sm_gen()](#generator)
+    + Complementor: [sm_cons()](#complementor)
++ Single Matrix Basic Opreation
+    + **Deep copy**: [sm_copy()](#deep-copy)
+    + Legality check: [sm_check()](#legality-check)
+    + Number check: [sm_numcheck()](#number-check)
+    + Convert to numbers: [sm_number()](#convert-to-numbers)
+    + Convert to strings: [sm_str()](#convert-to-strings)
+    + **Negative all elements**: [sm_negative()](#negative-all-elements)
+    + Absolute value: [sm_abs()](#absolute-value)
++ Single Matrix Operation
+    + **Matrix transpose**: [sm_trans()](#matrix-transpose)
+    + Matrix conjugate: [sm_conj()](#matrix-conjugate)
+    + Matrix conjugate transpose: [sm_con_trans()](#matrix-conjugate-transpose)
+    + **Determinant**: [sm_det()](#determinant)
+    + **Inverse Matrix** : [sm_inverse()](#inverse-Matrix)
+    + **Algebraic Remainder**: [sm_alge()](#algebraic-Remainder)
++ Class Smartix()
+    + OO Legality check: [Smatrix()](#oo-legality-check)
+    + Clean Matrix: [Smatrix().clean()](#clean-matrix)
+    + OO Legality check: [Smatrix().check()](#oo-legality-check-1)
+    + OO Number check: [Smatrix().numcheck()](#oo-number-check)
+    + **Print by rows**: [Smatrix().view()](#print-by-rows)
+    + OO Negative all elements: [Smatrix().negative()](#oo-Negative-all-elements)
+    + **Rotate**: [: [Smatrix().rotate()](#rotate)
+    + Transpose: [Smatrix().trans()](#transpose)
+    + Conjugate: [Smatrix().conj()](#conjugate)
+    + Conjugate transpose: [Smatrix().con_trans()](#conjugate-transpose)
+    + OO Determinant: [Smatrix().det()](#oo-determinant)
+    + Inverse: [Smatrix().inverse()](#inverse)
+    + **Find a segment of a certain length in the matrix (Gomoku system)**: [Smatrix().find()](#find-a-segment-of-a-certain-length-in-the-matrix)
+    + **Matrix trace**: [Smatrix()trace()](#matrix-trace)
++ Multiple Matrix Operation
+    + **Sum All**: [sm_sum()](#sum-all)
+    + Subtraction: [sm_minus()](#subtraction)
+    + **Multiplication with matrixs and numbers**: [sm_multis()](#multiplication-with-matrixs-and-numbers)
+    + Multiply: [sm_multi_mm()](#multiply)
+    + Multiply with number: [sm_multi_mn()](#multiply-with-number)
+
+***
+
+## Matrix Building
+
+#### Generator
+```python
+def sm_gen(row: int = 1, colume: int = 1, items=0, unit=False, eye=False):
+```
++ row - Number of row, for A(m\*n) you need set to m
++ colume - Number of colume, for A(m\*n) you need set to n
++ items - For filling
++ unit
+    + True - Generate a unit matrix: row\*row
++ eye
+    + True - Ditto
+Return a new matrix(list).
+
+#### Complementor
+```python
+def sm_cons(matrix, items=0, echo=0):
+```
++ matrix - A matrix need to be complement. For example:\[\[1,2\],\[1\]\]
++ items - For filling
++ echo
+    + True - Tell you are running complementor
+Return a new matrix(list).
+
+***
+
+## Single Matrix Basic Opreation
+
+#### Deep copy
+```python
+def sm_copy(matrix):
+```
+Deep copy, just use it whenever you need change original matrix.  
+Return a new matrix(list).
+
+#### Legality check
+```python
+def sm_check(matrix):
+```
+Check if every rows are in same length.  
+If True, return a tuple as (row, column), you can use as bool.  
+
+#### Number check
+```python
+def sm_numcheck(matrix):
+```
+Check if all items are numbers. Run a sm_check() automatically.   
+Return True or false.  
+
+#### Convert to numbers
+```python
+def sm_number(matrix, force=False):
+```
++ force
+    + True - Letters and '' will be 0
+Return a new matrix(list).
+
+#### Convert to strings
+```python
+def sm_str(matrix):
+```
+Return a new matrix(list).
+
+#### Negative all elements
+```python
+def sm_negative(matrix):
+```
+Return a new matrix(list).
+
+#### Absolute value
+```python
+def sm_abs(matrix):
+```
+Return a new matrix(list).
+
+***
+
+## Single Matrix Operation
+
+#### Matrix transpose
+```python
+def sm_trans(matrix):
+```
+Exchange lines and columns.  
+Return a new matrix(list).
+
+#### Matrix conjugate
+```python
+def sm_conj(matrix):
+```
+Return a new matrix(list).
+
+#### Matrix conjugate transpose
+```python
+def sm_con_trans(matrix):
+```
+Return a new matrix(list).
+
+#### Determinant
+```python
+def sm_det(matrix, force=False):
+```
++ force
+    + True - opreat even low != column
+    + False - only opreat when low == column
+Return a number.
+
+#### Inverse Matrix
+```python
+def sm_inverse(matrix):
+```
+Return a new matrix(list).
+
+#### Algebraic Remainder
+```python
+def sm_alge(matrix, row:int , colume:int):
+```
++ row - the row should be ignored
++ colume - the colume should be ignored
+Return a number.
+
+***
+
+## Class Smartix()
+
+#### OO Legality check 
+```python
+class Smatrix:
+def __init__(self, matrix, allnumber=False):
+```
++ allnumber
+    + True - run sm_numcheck()
+    + False - only sm_check()
+
+#### Clean Matrix
+```python
+def clean(self, items=0, echo=False):
+```
++ items - clean with this
++ echo
+    + True - tell you it's cleaned
+Return a new matrix(list).
+
+#### OO Legality check 1
+```python
+def check(self):
+```
+Same function as sm_check().
+
+#### OO Number check
+```python
+def numcheck(self):
+```
+Same function as sm_numbercheck().
+
+#### Print by rows
+```python
+def view(self):
+```
+Just pring, no return.
+
+#### OO Negative all elements
+```python
+def negative(self):
+```
+Same function as sm_negative().
+
+#### Rotate
+```python
+def rotate(self, method='exchange', step: int=1, force=False):
+```
++ method
+    + exchange - Exchange rows and columns
+    + ex | transpose | tr - Ditto
+    + clockwise - Rotate in clockwise direction
+    + clock - Ditto
+    + mirrorrow - mirror in horizontal direction
+    + mr | mh | mirror - Ditto
+    + mirrorcolume - mirror in vertical direction
+    + mc | mv - Ditto
++ step - How many times to run
++ force
+    + True - If unsuccessful, an error will be asserted
+Return a new matrix(list).
+
+#### Transpose
+```python
+def trans(self):
+```
+Same function as sm_trans().
+
+#### Conjugate
+```python
+def conj(self):
+```
+Same function as sm_conj().
+
+#### Conjugate transpose
+```python
+def con_trans(self):
+```
+Same function as sm_con_trans().
+
+#### OO Determinant
+```python
+def det(self):
+```
+Same function as sm_det().
+
+#### Inverse
+```python
+def inverse(self):
+```
+Same function as sm_inverse().
+
+#### Find a segment of a certain length in the matrix
+```python
+def find(self, string:str='', length=2, direct='all', echo=False):
+```
+Try to fin a segment that repeats, such as \['4','4','4'\] in any direction!
++ string - The single string, can be a number
++ length - How many times repeats
++ direct
+    + all - All direction
+    + a - Ditto
+    + row - Only search in rows - Priority: 0 (hightest)
+    + r - Ditto
+    + colume - Only search in columes - Priority: 1
+    + c - Ditto
+    + rowcolume - Only search in rows and columes
+    + rc | cr - Ditto
+    + oblique - Only search in oblique direction
+        + the \\ - Priority: 2
+        + the / - Priority: 3 (lowest)
+    + o - Ditto
++ echo
+    + False - Return True if find one
+    + True - Return (row, column) as the start point of first match
+
+You should know a game called Gobang,  
+this function can be used to determine the outcome.  
+Of course, Othello is also ok.
+
+#### Matrix trace
+```python
+def trace(self):
+```
+Return a number.
+
+***
+
+## Multiple Matrix Operation
+
+#### Sum All
+```python
+def sm_sum(\*matrixs, force=False):
+```
++ matrixs - can be two or more matrixs
++ force
+    + True - Set '' or SPACE to 0
+Error occurs with violated algorithm.  
+Return a new matrix(list).
+
+#### Subtraction
+```python
+def sm_minus(matrix_1, matrix_2, force=False):
+```
++ matrixs_1 - first matrix
++ matrixs_2 - second matrix
++ force
+    + True - Set '' or SPACE to 0
+Error occurs with violated algorithm.  
+Return a new matrix(list).
+
+#### Multiplication with matrixs and numbers
+```python
+def sm_multis(\*matrixs_or_numbers, force=False):
+```
++ matrixs - can be two or more matrixs and numbers
++ force
+    + True - Set '' or SPACE to 0
+Error occurs with violated algorithm.  
+Return a new matrix(list, even only one number).
+
+#### Multiply
+```python
+def sm_multi_mm(matrix_1, matrix_2):
+```
++ matrixs_1 - first matrix
++ matrixs_2 - second matrix
+Error occurs with violated algorithm. Use sm_number() if you need.  
+Return a new matrix(list, even only one number).
+
+#### Multiply with number
+```python
+def sm_multi_mn(matrix, number):
+```
++ matrixs_1 - first matrix
++ matrixs_2 - anumber
+Use sm_number() if you need.  
+Return a new matrix(list).
+
+***
 {% highlight ruby lineno %}
 '''
 A lightweight module for handling Matrix.
