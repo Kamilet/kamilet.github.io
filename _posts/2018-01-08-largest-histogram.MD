@@ -100,7 +100,7 @@ assert largest_histogram([1, 1, 3, 1]) == 4, "horizontal"
 assert largest_histogram([2, 1, 4, 5, 1, 3, 3]) == 8, "complex"
 assert largest_histogram([0, 3, 6, 9, 12, 15, 18]) == 36, 'littlebig'
 
-{% highlight ruby lineno %}
+{% endhighlight %}
 
 ---
 
