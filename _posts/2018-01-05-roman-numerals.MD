@@ -5,7 +5,7 @@ date: 2018-01-05 15:33:16 +0800
 lang: cn
 nav: post
 category: python
-tags: [python, file]
+tags: [number]
 ---
 
 * content

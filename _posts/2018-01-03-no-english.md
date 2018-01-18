@@ -5,7 +5,7 @@ date: 2017-12-26 10:08:00 +0800
 lang: en
 nav: post
 category: log
-tags: [其他]
+tags: [other]
 ---
 
 * content

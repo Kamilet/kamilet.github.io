@@ -5,7 +5,7 @@ date: 2018-01-03 10:08:00 +0800
 lang: tw
 nav: post
 category: log
-tags: [其他]
+tags: [other]
 ---
 
 * content

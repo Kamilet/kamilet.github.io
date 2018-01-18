@@ -5,7 +5,7 @@ date: 2018-01-16 17:32:44 +0800
 lang: cn
 nav: post
 category: python
-tags: [python, checkio]
+tags: [algorithm]
 ---
 
 * content

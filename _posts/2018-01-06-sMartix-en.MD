@@ -5,7 +5,7 @@ date: 2018-01-06 23:53:47 +0800
 lang: en
 nav: post
 category: python
-tags: [python, module]
+tags: [database, module]
 ---
 
 * content
