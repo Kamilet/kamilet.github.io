@@ -14,14 +14,23 @@ tags: [words]
 随机词语生成器
 
 生成随机词语，用于个人的“每日话题”计划。
+
 默认规则：
+
 1.在常用2500字中，随机选出1枚，重复则提醒
-（字典在data/words.html，重复字典在data/words-used.html）
-（文字表：https://www.qqxiuzi.cn/zh/xiandaihanyu-changyongzi.php#cyz）
+
 2.在字典中，提取内容
-（备选字典-post/get：http://xh.5156edu.com/index.php?f_key=%C9%CF&f_type=zi&SearchString.x=16&SearchString.y=12）
-（备选字典-get：https://www.zdic.net/hans/字）
+
 <!-- more -->
+
+（字典在data/words.html，重复字典在data/words-used.html）
+
+（文字表：https://www.qqxiuzi.cn/zh/xiandaihanyu-changyongzi.php#cyz）
+
+（备选字典-post/get：http://xh.5156edu.com/index.php?f_key=%C9%CF&f_type=zi&SearchString.x=16&SearchString.y=12）
+
+（备选字典-get：https://www.zdic.net/hans/字）
+
 {% highlight ruby lineno %}
 # -*- coding:utf-8 -*-
 '''随机词语生成器
