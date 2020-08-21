@@ -12,13 +12,14 @@ tags: [website]
 {:toc}
 
 用法：
-将脚本内容另存为.jsx文件。
+将下面的脚本内容另存为.jsx文件。
 打开有文字图层的文档，并在Photoshop中打开本脚本。
 弹出的第1个对话框会显示所有字体的Postscript名称，输入其中1个用于被替换。
 在弹出的第2个对话框里，输入另1个用于替换。
 
 <!-- more -->
 {% highlight ruby lineno %}
+
 // Enhanced by Kamilet From Kamilet.cn
 // List and Replace Fonts in Photoshop
 // Original Script by frontendbeast:
@@ -123,3 +124,4 @@ if (documents.length) {
 } else {
     alert('No fonts found \nOpen a PSD before running this script',);
 }
+{% endhighlight %}
