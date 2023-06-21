@@ -1,5 +1,7 @@
 # kamilet.github.io
 
+【已停止使用】
+
 个人博客，记录自己学习编程的历程。
 A blog for recording my learning process about coding.  
 [点击这里进入](http://coding.kamilet.cn/) | [Here](http://coding.kamilet.cn/)
